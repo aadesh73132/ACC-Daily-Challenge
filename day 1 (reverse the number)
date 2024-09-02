@@ -1,0 +1,36 @@
+/*
+Name = Aadesh Sharma
+section A 
+b.tech(cse)
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	//no of test cases
+	int T;
+	cin>>T;
+	
+	while(T != 0){
+	    T--;
+	    
+        int n;
+        cin >> n;
+
+        // Reverse the number
+        int reverseNo = 0;
+        while (n > 0)
+        {
+            int lastDigit = n % 10;
+            reverseNo = (reverseNo * 10) + lastDigit;
+            n /= 10;
+        }
+
+        // Print the reversed number
+        cout << reverseNo<< endl;
+    }
+
+    return 0;
+}
